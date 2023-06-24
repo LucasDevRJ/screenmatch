@@ -2,7 +2,7 @@ public class Filme {
     String nome;
     int anoDeLancamento;
     boolean incluidoNoPlano;
-    double avaliacao;
+    double somaDasAvaliacoes;
     int totalDeAvaliacoes;
     int duracaoEmMinutos;
 
@@ -12,10 +12,15 @@ public class Filme {
                 Ano: %d
                 Incluido: %s
                 Nota: %f
-                Avaliação: %d
+                Avaliações: %d
                 Duração: %d
-                """.formatted(nome, anoDeLancamento, incluidoNoPlano, avaliacao, totalDeAvaliacoes, duracaoEmMinutos);
+                """.formatted(nome, anoDeLancamento, incluidoNoPlano, somaDasAvaliacoes, totalDeAvaliacoes, duracaoEmMinutos);
 
         System.out.println(ficha);
+    }
+
+    void avalia(double nota) {
+        somaDasAvaliacoes += nota;
+        totalDeAvaliacoes++;
     }
 }
