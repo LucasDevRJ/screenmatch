@@ -3,6 +3,7 @@ public class Principal {
         Filme meuFilme = new Filme();
         meuFilme.nome = "O Poderoso Chefão";
         meuFilme.anoDeLancamento = 1972;
+        meuFilme.incluidoNoPlano = true;
         meuFilme.duracaoEmMinutos = 175;
 
         meuFilme.exibeFichaTecnica();
