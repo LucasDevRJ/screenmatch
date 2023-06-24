@@ -11,10 +11,11 @@ public class Filme {
                 Nome: %s
                 Ano: %d
                 Incluido: %s
-                Nota: %f
+                Nota: %.1f
                 Avaliações: %d
                 Duração: %d
-                """.formatted(nome, anoDeLancamento, incluidoNoPlano, somaDasAvaliacoes, totalDeAvaliacoes, duracaoEmMinutos);
+                """.formatted(nome, anoDeLancamento, incluidoNoPlano,
+                pegaMedia(), totalDeAvaliacoes, duracaoEmMinutos);
 
         System.out.println(ficha);
     }
@@ -22,5 +23,9 @@ public class Filme {
     void avalia(double nota) {
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
+    }
+
+    double pegaMedia() {
+        return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 }
