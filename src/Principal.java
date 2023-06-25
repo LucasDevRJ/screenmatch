@@ -12,12 +12,12 @@ public class Principal {
         meuFilme.avalia(10);
 
         System.out.println(meuFilme.getTotalDeAvaliacoes());
-        System.out.println(meuFilme.totalDeAvaliacoes);
         System.out.println(meuFilme.pegaMedia());
 
         meuFilme.exibeFichaTecnica();
-        meuFilme.somaDasAvaliacoes = 10;
-        meuFilme.totalDeAvaliacoes = 1;
+        //não podemos setar atributos encapsulados
+        //meuFilme.somaDasAvaliacoes = 10;
+        //meuFilme.totalDeAvaliacoes = 1;
 
         meuFilme.exibeFichaTecnica();
     }
