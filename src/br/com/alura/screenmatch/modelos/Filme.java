@@ -8,6 +8,10 @@ public class Filme {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public int getTotalDeAvaliacoes() {
         return totalDeAvaliacoes;
     }
