@@ -4,10 +4,9 @@ public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
         meuFilme.setNome("O Poderoso Chefão");
-        meuFilme.anoDeLancamento = 1972;
-        meuFilme.incluidoNoPlano = true;
-        meuFilme.duracaoEmMinutos = 175;
-        meuFilme.nome.
+        meuFilme.setAnoDeLancamento(1972);
+        meuFilme.setIncluidoNoPlano(true);
+        meuFilme.setDuracaoEmMinutos(175);
 
         meuFilme.exibeFichaTecnica();
         meuFilme.avalia(8);
