@@ -1,3 +1,5 @@
+import br.com.alura.screenmatch.modelos.Filme;
+
 public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
@@ -5,6 +7,7 @@ public class Principal {
         meuFilme.anoDeLancamento = 1972;
         meuFilme.incluidoNoPlano = true;
         meuFilme.duracaoEmMinutos = 175;
+        meuFilme.nome.
 
         meuFilme.exibeFichaTecnica();
         meuFilme.avalia(8);
