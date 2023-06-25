@@ -6,6 +6,10 @@ public class Filme {
     private int totalDeAvaliacoes;
     int duracaoEmMinutos;
 
+    int getTotalDeAvaliacoes() {
+        return totalDeAvaliacoes;
+    }
+
     void exibeFichaTecnica() {
         String ficha = """
                 Nome: %s
