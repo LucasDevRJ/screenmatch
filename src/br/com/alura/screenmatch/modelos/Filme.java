@@ -8,16 +8,32 @@ public class Filme {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
+    public String getNome() {
+        return nome;
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
     }
 
     public void setAnoDeLancamento(int anoDeLancamento) {
         this.anoDeLancamento = anoDeLancamento;
     }
 
+    public boolean isIncluidoNoPlano() {
+        return incluidoNoPlano;
+    }
+
     public void setIncluidoNoPlano(boolean incluidoNoPlano) {
         this.incluidoNoPlano = incluidoNoPlano;
+    }
+
+    public int getDuracaoEmMinutos() {
+        return duracaoEmMinutos;
     }
 
     public void setDuracaoEmMinutos(int duracaoEmMinutos) {
@@ -26,6 +42,11 @@ public class Filme {
 
     public int getTotalDeAvaliacoes() {
         return totalDeAvaliacoes;
+    }
+
+    public void avalia(double nota) {
+        somaDasAvaliacoes += nota;
+        totalDeAvaliacoes++;
     }
 
     public void exibeFichaTecnica() {
@@ -40,11 +61,6 @@ public class Filme {
                 pegaMedia(), totalDeAvaliacoes, duracaoEmMinutos);
 
         System.out.println(ficha);
-    }
-
-    public void avalia(double nota) {
-        somaDasAvaliacoes += nota;
-        totalDeAvaliacoes++;
     }
 
     public double pegaMedia() {
