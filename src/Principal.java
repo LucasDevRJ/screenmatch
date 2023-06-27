@@ -1,3 +1,4 @@
+import br.com.alura.screenmacth.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
@@ -36,5 +37,9 @@ public class Principal {
         serie.avalia(8);
         serie.avalia(9);
         serie.exibeFichaTecnica();
+
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(meuFilme);
+        System.out.printf("A duração total do filme %s é %d minutos.", meuFilme.getNome(), calculadora.getTempoTotal());
     }
 }
