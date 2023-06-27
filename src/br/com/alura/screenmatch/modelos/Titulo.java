@@ -52,11 +52,11 @@ public class Titulo {
     public void exibeFichaTecnica() {
         String ficha = """
                 Nome: %s
-                Ano: %d
-                Incluido: %s
+                Ano de Lançamento: %d
+                Incluido no Plano: %s
                 Nota: %.1f
                 Avaliações: %d
-                Duração: %d
+                Duração: %d minutos
                 """.formatted(nome, anoDeLancamento, incluidoNoPlano,
                 pegaMedia(), totalDeAvaliacoes, duracaoEmMinutos);
 

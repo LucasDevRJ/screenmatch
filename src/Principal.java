@@ -28,7 +28,6 @@ public class Principal {
         serie.setNome("Breaking Bad");
         serie.setAnoDeLancamento(2008);
         serie.setIncluidoNoPlano(true);
-        serie.setDuracaoEmMinutos(585);
         serie.setTemporadas(5);
         serie.setAtiva(false);
         serie.setEpisodiosPorTemporada(12);

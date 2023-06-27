@@ -42,4 +42,25 @@ public class Serie extends Titulo {
     public int getDuracaoEmMinutos() {
         return temporadas * episodiosPorTemporada * minutosPorEpisodio;
     }
+
+    @Override
+    public void exibeFichaTecnica() {
+        String ficha = """
+                Nome: %s
+                Ano de Lançamento: %d
+                Incluido no Plano: %s
+                Nota: %.1f
+                Avaliações: %d
+                Duração: %d minutos
+                Temporadas: %d
+                Ativa: %s
+                Episodios por Temporada: %d
+                Duração por Episodio: %d minutos
+                """.formatted(getNome(), getAnoDeLancamento(), isIncluidoNoPlano(),
+                pegaMedia(), getTotalDeAvaliacoes(), getDuracaoEmMinutos(),
+                this.temporadas, this.ativa, this.episodiosPorTemporada,
+                this.minutosPorEpisodio);
+
+        System.out.println(ficha);
+    }
 }
