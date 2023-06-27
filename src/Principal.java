@@ -1,4 +1,5 @@
 import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -22,5 +23,15 @@ public class Principal {
         //meuFilme.totalDeAvaliacoes = 1;
 
         meuFilme.exibeFichaTecnica();
+
+        Serie serie = new Serie();
+        serie.setNome("Breaking Bad");
+        serie.setAnoDeLancamento(2008);
+        serie.setIncluidoNoPlano(true);
+        serie.setDuracaoEmMinutos(585);
+        serie.avalia(10);
+        serie.avalia(8);
+        serie.avalia(9);
+        serie.exibeFichaTecnica();
     }
 }
