@@ -47,6 +47,8 @@ public class Principal {
         meuFilme2.avalia(7);
         meuFilme2.avalia(9);
 
+        meuFilme2.exibeFichaTecnica();
+
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
         calculadora.inclui(meuFilme);
         calculadora.inclui(meuFilme2);
