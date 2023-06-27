@@ -1,6 +1,6 @@
-import br.com.alura.screenmacth.calculos.CalculadoraDeTempo;
-import br.com.alura.screenmatch.modelos.Filme;
-import br.com.alura.screenmatch.modelos.Serie;
+import br.com.alura.screenmatch.screenmacth.calculos.CalculadoraDeTempo;
+import br.com.alura.screenmatch.screenmacth.modelos.Filme;
+import br.com.alura.screenmatch.screenmacth.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
