@@ -1,4 +1,6 @@
 import br.com.alura.screenmatch.screenmacth.calculos.CalculadoraDeTempo;
+import br.com.alura.screenmatch.screenmacth.calculos.FiltroRecomendacao;
+import br.com.alura.screenmatch.screenmacth.modelos.Episodio;
 import br.com.alura.screenmatch.screenmacth.modelos.Filme;
 import br.com.alura.screenmatch.screenmacth.modelos.Serie;
 
@@ -49,11 +51,32 @@ public class Principal {
 
         meuFilme2.exibeFichaTecnica();
 
+        Filme meuFilme3 = new Filme();
+        meuFilme3.setNome("the professional");
+        meuFilme3.setAnoDeLancamento(1994);
+        meuFilme3.setIncluidoNoPlano(true);
+        meuFilme3.setDuracaoEmMinutos(149);
+        meuFilme3.avalia(10);
+
+        meuFilme3.exibeFichaTecnica();
+
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
         calculadora.inclui(meuFilme);
         calculadora.inclui(meuFilme2);
         calculadora.inclui(serie);
 
-        System.out.printf("A duração total de títulos assistidos é %d minutos.", calculadora.getTempoTotal());
+        System.out.printf("A duração total de títulos assistidos é %d minutos.\n", calculadora.getTempoTotal());
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(meuFilme);
+        filtro.filtra(meuFilme2);
+        filtro.filtra(meuFilme3);
+
+        Episodio episodio = new Episodio();
+        episodio.setNome("Prólogo");
+        episodio.setNumero(0);
+        episodio.setSerie(serie);
+        episodio.setTotalVisualizacoes(300);
+        filtro.filtra(episodio);
     }
 }
