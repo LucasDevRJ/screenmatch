@@ -29,6 +29,10 @@ public class Principal {
         serie.setAnoDeLancamento(2008);
         serie.setIncluidoNoPlano(true);
         serie.setDuracaoEmMinutos(585);
+        serie.setTemporadas(5);
+        serie.setAtiva(false);
+        serie.setEpisodiosPorTemporada(12);
+        serie.setMinutosPorEpisodio(45);
         serie.avalia(10);
         serie.avalia(8);
         serie.avalia(9);
