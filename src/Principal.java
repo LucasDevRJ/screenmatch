@@ -38,8 +38,20 @@ public class Principal {
         serie.avalia(9);
         serie.exibeFichaTecnica();
 
+        Filme meuFilme2 = new Filme();
+        meuFilme2.setNome("Scarface");
+        meuFilme2.setAnoDeLancamento(1984);
+        meuFilme2.setIncluidoNoPlano(true);
+        meuFilme2.setDuracaoEmMinutos(170);
+        meuFilme2.avalia(6);
+        meuFilme2.avalia(7);
+        meuFilme2.avalia(9);
+
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
         calculadora.inclui(meuFilme);
-        System.out.printf("A duração total do filme %s é %d minutos.", meuFilme.getNome(), calculadora.getTempoTotal());
+        calculadora.inclui(meuFilme2);
+        calculadora.inclui(serie);
+
+        System.out.printf("A duração total de títulos assistidos é %d minutos.", calculadora.getTempoTotal());
     }
 }
