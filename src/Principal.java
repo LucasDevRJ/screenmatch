@@ -4,6 +4,8 @@ import br.com.alura.screenmatch.screenmacth.modelos.Episodio;
 import br.com.alura.screenmatch.screenmacth.modelos.Filme;
 import br.com.alura.screenmatch.screenmacth.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
@@ -85,5 +87,10 @@ public class Principal {
         filmeDoPaulo.setNome("Dogville");
         filmeDoPaulo.setAnoDeLancamento(2003);
         filmeDoPaulo.avalia(10);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filmeDoPaulo);
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(meuFilme2);
     }
 }
