@@ -92,5 +92,21 @@ public class Principal {
         listaDeFilmes.add(filmeDoPaulo);
         listaDeFilmes.add(meuFilme);
         listaDeFilmes.add(meuFilme2);
+
+        System.out.println();
+        var tamanhoDaLista = listaDeFilmes.size();
+        var primeiroFilme = listaDeFilmes.get(0).getNome();
+        System.out.println("Tamanho da lista: " + tamanhoDaLista);
+        System.out.println("Nome do primeiro filme: " + primeiroFilme);
+
+        System.out.println();
+        System.out.println("Lista de filmes:");
+        for (int i = 0; i < tamanhoDaLista; i++) {
+            System.out.println(listaDeFilmes.get(i).getNome());
+        }
+
+        System.out.println();
+        System.out.println("toString do filme");
+        System.out.println(listaDeFilmes.get(1).toString());
     }
 }
