@@ -114,5 +114,7 @@ public class Principal {
         //armazenar o filmeDoPaulo dentro da referência objeto é possível
         Object objeto = filmeDoPaulo;
         System.out.println(objeto);
+
+        var filmeDoPaulo2 = new Filme("Dogville");
     }
 }
