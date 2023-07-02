@@ -108,5 +108,11 @@ public class Principal {
         System.out.println();
         System.out.println("toString do filme");
         System.out.println(listaDeFilmes.get(1).toString());
+        System.out.println();
+
+        //Como todas as classes herdam de Objeto
+        //armazenar o filmeDoPaulo dentro da referência objeto é possível
+        Object objeto = filmeDoPaulo;
+        System.out.println(objeto);
     }
 }
