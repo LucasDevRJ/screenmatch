@@ -29,9 +29,7 @@ public class Principal {
 
         meuFilme.exibeFichaTecnica();
 
-        Serie serie = new Serie();
-        serie.setNome("Breaking Bad");
-        serie.setAnoDeLancamento(2008);
+        Serie serie = new Serie("Breaking Bad", 2008);
         serie.setIncluidoNoPlano(true);
         serie.setTemporadas(5);
         serie.setAtiva(false);
@@ -117,8 +115,7 @@ public class Principal {
 
         System.out.println();
         //isntanciando com construtor
-        var meuFilme4 = new Filme("The Batman");
-        meuFilme4.setAnoDeLancamento(2022);
+        var meuFilme4 = new Filme("The Batman", 2022);
         System.out.println(meuFilme4);
         System.out.println();
 

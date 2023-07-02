@@ -13,6 +13,10 @@ public class Titulo {
         this.anoDeLancamento = anoDeLancamento;
     }
 
+    public Titulo() {
+
+    }
+
     public String getNome() {
         return nome;
     }

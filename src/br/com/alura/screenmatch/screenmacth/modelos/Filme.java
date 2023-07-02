@@ -8,8 +8,8 @@ public class Filme extends Titulo implements Classificavel {
     //construtor é ótimo para se passar parâmetros como obrigatórios
     //porque dessa forma terá os atributos setados
     //os que forem obrigados
-    public Filme(String nome) {
-        this.setNome(nome);
+    public Filme(String nome, int anoDeLancamento) {
+        super(nome, anoDeLancamento);
     }
 
     //construtor padrão para poder instancia objetos sem parâmetros
