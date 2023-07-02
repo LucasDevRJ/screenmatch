@@ -115,6 +115,13 @@ public class Principal {
         Object objeto = filmeDoPaulo;
         System.out.println(objeto);
 
-        var filmeDoPaulo2 = new Filme("Dogville");
+        System.out.println();
+        //isntanciando com construtor
+        var meuFilme4 = new Filme("The Batman");
+        meuFilme4.setAnoDeLancamento(2022);
+        System.out.println(meuFilme4);
+        System.out.println();
+
+        System.out.println("Lista de filmes: " + listaDeFilmes);
     }
 }

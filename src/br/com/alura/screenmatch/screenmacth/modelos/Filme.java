@@ -5,8 +5,16 @@ import br.com.alura.screenmatch.screenmacth.calculos.Classificavel;
 public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
+    //construtor é ótimo para se passar parâmetros como obrigatórios
+    //porque dessa forma terá os atributos setados
+    //os que forem obrigados
     public Filme(String nome) {
-        super();
+        this.setNome(nome);
+    }
+
+    //construtor padrão para poder instancia objetos sem parâmetros
+    public Filme() {
+
     }
 
     public String getDiretor() {
