@@ -9,8 +9,11 @@ import java.util.ArrayList;
 public class PrincipalComListas {
     public static void main(String[] args) {
         Filme filme1 = new Filme("Bad Boys", 2020);
+        filme1.avalia(6);
         Filme filme2 = new Filme("Sem Saída", 2011);
+        filme2.avalia(7);
         Filme filme3 = new Filme("Legado Explosivo", 2020);
+        filme3.avalia(4);
 
         Serie serie1 = new Serie("Lista Negra", 2021);
         Serie serie2 = new Serie("Peaky Blinders", 2022);
@@ -21,5 +24,11 @@ public class PrincipalComListas {
         listaDeFilmes.add(filme3);
         listaDeFilmes.add(serie1);
         listaDeFilmes.add(serie2);
+
+        for (Titulo item : listaDeFilmes) {
+            System.out.println(item.getNome());
+            Filme filme = (Filme) item;
+            System.out.println("Classificação: " + filme.getClassificacao());
+        }
     }
 }
