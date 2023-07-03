@@ -30,5 +30,11 @@ public class PrincipalComListas {
             Filme filme = (Filme) item;
             System.out.println("Classificação: " + filme.getClassificacao());
         }
+
+        //Outra forma de se exibir a lista: forEach
+        //listaDeFilmes.forEach(filme -> System.out.println(filme));
+
+        //Method Reference
+        //listaDeFilmes.forEach(System.out::println);
     }
 }
