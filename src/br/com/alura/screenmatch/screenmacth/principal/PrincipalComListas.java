@@ -14,6 +14,8 @@ public class PrincipalComListas {
         filme2.avalia(7);
         Filme filme3 = new Filme("Legado Explosivo", 2020);
         filme3.avalia(4);
+        Filme filme4 = new Filme("Dogville", 2003);
+        filme4.avalia(8);
 
         Serie serie1 = new Serie("Lista Negra", 2021);
         Serie serie2 = new Serie("Peaky Blinders", 2022);
@@ -43,5 +45,8 @@ public class PrincipalComListas {
                 System.out.println("Classificação: " + filme.getClassificacao());
             }
         }
+
+        //referencia ao filme do Paulo (filme4)
+        var filmeDoPaulo = filme4;
     }
 }
