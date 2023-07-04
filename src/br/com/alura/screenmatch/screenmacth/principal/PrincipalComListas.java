@@ -5,6 +5,8 @@ import br.com.alura.screenmatch.screenmacth.modelos.Serie;
 import br.com.alura.screenmatch.screenmacth.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -48,5 +50,18 @@ public class PrincipalComListas {
 
         //referencia ao filme do Paulo (filme4)
         var filmeDoPaulo = filme4;
+
+        System.out.println();
+        ArrayList<String> buscaPorAtor = new ArrayList<>();
+        buscaPorAtor.add("Marlon Brando");
+        buscaPorAtor.add("Will Smith");
+        buscaPorAtor.add("Jean Rino");
+        buscaPorAtor.add("Sylvester Stallone");
+        System.out.println("Lista de atores:");
+        System.out.println(buscaPorAtor);
+
+        Collections.sort(buscaPorAtor);
+        System.out.println("Lista ordenada:");
+        System.out.println(buscaPorAtor);
     }
 }
