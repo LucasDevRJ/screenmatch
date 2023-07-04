@@ -25,16 +25,23 @@ public class PrincipalComListas {
         listaDeFilmes.add(serie1);
         listaDeFilmes.add(serie2);
 
-        for (Titulo item : listaDeFilmes) {
-            System.out.println(item.getNome());
-            Filme filme = (Filme) item;
-            System.out.println("Classificação: " + filme.getClassificacao());
-        }
+//        for (Titulo item : listaDeFilmes) {
+//            System.out.println(item.getNome());
+//            Filme filme = (Filme) item;
+//            System.out.println("Classificação: " + filme.getClassificacao());
+//        }
 
         //Outra forma de se exibir a lista: forEach
         //listaDeFilmes.forEach(filme -> System.out.println(filme));
 
         //Method Reference
         //listaDeFilmes.forEach(System.out::println);
+
+        for (Titulo item: listaDeFilmes) {
+            System.out.println(item.getNome());
+            if (item instanceof Filme filme) {
+                System.out.println("Classificação: " + filme.getClassificacao());
+            }
+        }
     }
 }
