@@ -39,7 +39,7 @@ public class PrincipalComListas {
 
         for (Titulo item: listaDeFilmes) {
             System.out.println(item.getNome());
-            if (item instanceof Filme filme) {
+            if (item instanceof Filme filme && filme.getClassificacao() > 2) {
                 System.out.println("Classificação: " + filme.getClassificacao());
             }
         }
