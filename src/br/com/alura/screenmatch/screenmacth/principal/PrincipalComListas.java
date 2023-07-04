@@ -4,10 +4,7 @@ import br.com.alura.screenmatch.screenmacth.modelos.Filme;
 import br.com.alura.screenmatch.screenmacth.modelos.Serie;
 import br.com.alura.screenmatch.screenmacth.modelos.Titulo;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -24,7 +21,10 @@ public class PrincipalComListas {
         Serie serie2 = new Serie("Peaky Blinders", 2022);
         Serie serie3 = new Serie("Breaking Bad", 2013);
 
-        ArrayList<Titulo> listaDeTitulos = new ArrayList<Titulo>();
+        //ArrayList<Titulo> listaDeTitulos = new ArrayList<Titulo>();
+        //sempre devemos referenciar aos objetos da forma mais generica possivel
+        List<Titulo> listaDeTitulos = new ArrayList<Titulo>();
+        //List<Titulo> listaDeTitulos = new LinkedList<Titulo>();
         listaDeTitulos.add(filme1);
         listaDeTitulos.add(filme2);
         listaDeTitulos.add(filme3);
