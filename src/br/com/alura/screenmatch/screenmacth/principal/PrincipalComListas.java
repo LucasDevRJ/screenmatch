@@ -21,27 +21,29 @@ public class PrincipalComListas {
 
         Serie serie1 = new Serie("Lista Negra", 2021);
         Serie serie2 = new Serie("Peaky Blinders", 2022);
+        Serie serie3 = new Serie("Breaking Bad", 2013);
 
-        ArrayList<Titulo> listaDeFilmes = new ArrayList<Titulo>();
-        listaDeFilmes.add(filme1);
-        listaDeFilmes.add(filme2);
-        listaDeFilmes.add(filme3);
-        listaDeFilmes.add(serie1);
-        listaDeFilmes.add(serie2);
+        ArrayList<Titulo> listaDeTitulos = new ArrayList<Titulo>();
+        listaDeTitulos.add(filme1);
+        listaDeTitulos.add(filme2);
+        listaDeTitulos.add(filme3);
+        listaDeTitulos.add(serie1);
+        listaDeTitulos.add(serie2);
+        listaDeTitulos.add(serie3);
 
-//        for (Titulo item : listaDeFilmes) {
+//        for (Titulo item : listaDeTitulos) {
 //            System.out.println(item.getNome());
 //            Filme filme = (Filme) item;
 //            System.out.println("Classificação: " + filme.getClassificacao());
 //        }
 
         //Outra forma de se exibir a lista: forEach
-        //listaDeFilmes.forEach(filme -> System.out.println(filme));
+        //listaDeTitulos.forEach(filme -> System.out.println(filme));
 
         //Method Reference
-        //listaDeFilmes.forEach(System.out::println);
+        //listaDeTitulos.forEach(System.out::println);
 
-        for (Titulo item: listaDeFilmes) {
+        for (Titulo item: listaDeTitulos) {
             System.out.println(item.getNome());
             if (item instanceof Filme filme && filme.getClassificacao() > 2) {
                 System.out.println("Classificação: " + filme.getClassificacao());
@@ -63,5 +65,10 @@ public class PrincipalComListas {
         Collections.sort(buscaPorAtor);
         System.out.println("Lista ordenada:");
         System.out.println(buscaPorAtor);
+        System.out.println();
+
+        Collections.sort(listaDeTitulos);
+        System.out.println("Lista de títulos ordenada:");
+        System.out.println(listaDeTitulos);
     }
 }
