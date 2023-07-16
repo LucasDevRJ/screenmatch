@@ -87,6 +87,6 @@ public class Titulo implements Comparable<Titulo> {
 
     @Override
     public String toString() {
-        return "Nome: " + this.nome + "(" + this.anoDeLancamento + ")";
+        return "Titulo {" + "\n\tNome: " + this.nome + "\n\tLançamento: " + this.anoDeLancamento + "\n}";
     }
 }
