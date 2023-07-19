@@ -17,8 +17,10 @@ public class PrincipalComBusca {
     public static void main(String[] args) throws IOException, InterruptedException {
         Scanner leitura = new Scanner(System.in);
 
-        System.out.println("Digite o nome do filme: ");
+        System.out.print("Digite o nome do filme: ");
         var busca = leitura.nextLine();
+
+        busca = busca.replace(" ", "+");
 
         String endereco = "https://www.omdbapi.com/?t=" + busca + "&apikey=fa6df38e";
 
