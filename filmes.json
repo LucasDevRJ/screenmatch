@@ -1,0 +1,18 @@
+[
+  {
+    "Nome": "Sonic",
+    "AnoDeLancamento": 2013,
+    "IncluidoNoPlano": false,
+    "SomaDasAvaliacoes": 0.0,
+    "TotalDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 18
+  },
+  {
+    "Nome": "Super Mario World",
+    "AnoDeLancamento": 1991,
+    "IncluidoNoPlano": false,
+    "SomaDasAvaliacoes": 0.0,
+    "TotalDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 30
+  }
+]
